@@ -57,7 +57,7 @@ public abstract class AbstractScriptManager {
                 if (!scriptFile.exists()) {
                     return null;
                 }
-                engine = sem.getEngineByName("graal.js");
+                engine = sem.getEngineByName("nashorn");
                 if (c != null) {
                     c.setScriptEngine(path, engine);
                 }
