@@ -111,7 +111,7 @@ public class DatabaseConnection {
              */
             try {
                 final Connection con = DriverManager.getConnection(
-                        "jdbc:mysql://127.0.0.1:3306/kkms?autoReconnect=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull",
+                        "jdbc:mysql://127.0.0.1:3306/chui_jms_v207?autoReconnect=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull",
                         ServerConstants.SQL_USER, ServerConstants.SQL_PASSWORD);
                 allConnections.add(con);
                 return con;
